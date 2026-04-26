@@ -24,12 +24,12 @@
     <div class="main">
         <img src="https://images.google.com/images/branding/googlelogo/1x/googlelogo_light_color_272x92dp.png" alt="">
 
-        <div class="search">
+        <div class="search" id="search__content">
             <div class="search-field">
                 <span class="material-icons-outlined">
                     add
                 </span>
-                <input type="text">
+                <input type="text" onfocus="handleFocusInput()" onblur="handleBlurInput()" onkeydown="handleKeydown(event)">
                 <span class="material-icons-outlined">
                     keyboard
                 </span>
@@ -43,12 +43,47 @@
                     search
                 </span>
             </div>
+            <ul id="history" class="history-list"></ul>
         </div>
         <div class="buttons">
             <button>Pesquisa Google</button>
             <button>Estou com sorte</button>
         </div>
     </div>
-</body>
 
+    <footer class="footer">
+        <span class="country">
+            Brasil
+        </span>
+        <div class="links">
+            <ul>
+                <li>
+                    <a href="">Sobre</a>
+                </li>
+                <li>
+                    <a href="">Publicidade</a>
+                </li>
+                <li>
+                    <a href="">Negócios</a>
+                </li>
+                <li>
+                    <a href="">Como funciona a Pesquisa</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="">Privacidade</a>
+                </li>
+                <li>
+                    <a href="">Termos</a>
+                </li>
+                <li>
+                    <a href="">Configurações</a>
+                </li>
+            </ul>
+
+        </div>
+    </footer>
+</body>
+    <script src="assets/js/script.js"></script>
 </html>
