@@ -11,8 +11,13 @@ function handleFocusInput() {
 }
 
 function handleBlurInput() {
-  setTimeout(() => searchContent.classList.remove('active'), 200)
 }
+
+document.addEventListener('click', (event) => {
+  if (!searchContent.contains(event.target)) {
+    searchContent.classList.remove('active')
+  }
+})
 
 function handleKeydown(event) {
   if(event.key === 'Enter') {
